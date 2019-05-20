@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fafafa">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="custom.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <div id="main-container">
+    <div id="floating-container">      
+    <div id="header-container">
+        <img id="logo" src="logo.png" alt="logo" />     
+    </div>
+      <div id="content-container">        
+<div id="janrainCaptureWidget">
+  <div id="initialLoadScreen">
+    <!-- This exists just to keep the widget happy -->
+  </div>
+
+
+<div id="manageProfile_privacy">
+  <div class="manage-screen">
+    <div class="profile-header">
+      <div class="profile-header-image user-photo-container" data-render-user-photo="large"></div>
+      <div class="profile-header-text">
+        <h1>Greg</h1>
+        <h3>gmstemp@hotmail.com</h3>
+      </div>
+    </div>
+    <h1 class="screen-heading">Manage your account settings, content preferences, privacy and security.</h1>
+    <div class="profile-management-row">
+      <div class="profile-management-card large">
+        <div class="card-heading aic-control" data-render-screen="manageProfile">
+          <h1><span class="chevron left"></span><span class="profile-privacy card-icon"></span>Privacy Settings</h1>
+        </div>
+        <div class="card-body">
+          <h2>Privacy Settings</h2>
+          <p>Your privacy is important ot us. Use the controls below to manage your privacy settings with {ProductName} and exercise your rights under the General Data Protection Regulation. We will not use your data for any purpose that you do not consent to.</p>
+            <div class="form-action-buttons">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+              <button type="submit">Save Changes</button>
+              <button type="button" class="secondary aic-control" data-render-screen="manageProfile">Back to User Profile</button>
+            </div>
+          <h2>Account Actions</h2>
+          <div class="profile-management-row">
+            <div class="action-card">
+              <h3>Request Your Data</h3>
+              <p>Requests for your data will be processed in a timely fashion and a copy of all your data will be sent to the email address listed in your account.</p>
+              <button id="requestData" type="button" class="danger aic-control" data-action="requestData">Request My Data</button>
+            </div>
+            <div class="action-card">
+              <h3>Delete Your Account</h3>
+              <p>Clicking the button below removes your account and deletes all the data associated with that account (except for any data that might need to be retained for legal purposes).</p>
+              <button id="deleteAccount" type="button" class="danger aic-control" data-action="deleteAccount" data-button-confirm="{* textDeleteAccountConfirm *}">Delete My Acccount</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <span>Need help? <u>Visit our help center.</u></span>
+  </div>
+</div>
+
+  
+</div>
+     </div>
+    </div>
+  </div>
+</body>
+</html>

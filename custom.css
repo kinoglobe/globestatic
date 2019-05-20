@@ -1,0 +1,322 @@
+/* BEGIN STYLESHEET HERE */
+
+/* FS Elliot Fonts */
+@font-face {
+  font-family: 'fs_elliot_pro-light';
+  src: url('fonts/fs_elliot_pro-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fs_elliot_pro-regular';
+  src: url('fonts/fs_elliot_pro-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fs_elliot_pro-bold';
+  src: url('fonts/fs_elliot_pro-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fs_elliot_pro-heavy';
+  src: url('fonts/fs_elliot_pro-heavy.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIText-Light';
+  src: url('fonts/SFUIText-Light.ttf') format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SFUIText-Regular';
+  src: url('fonts/SFUIText-Regular.ttf') format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIDisplay-Light';
+  src: url('fonts/sf-ui-display-cufonfonts/sf-ui-display-light.otf') format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIDisplay-Medium';
+  src: url('fonts/sf-ui-display-cufonfonts/sf-ui-display-medium.otf') format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIDisplay-Semibold';
+  src: url('fonts/sf-ui-display-cufonfonts/sf-ui-display-semibold.otf') format("opentype");
+  font-style: normal;
+}
+
+
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+    font-weight: normal;
+    color: #244958;
+    font-family: 'fs_elliot_pro-light', Helvetica, Arial, sans-serif;
+}
+
+/* Globe default button */
+button{
+	  border: 1px solid transparent;
+    white-space: nowrap;
+    background:#009CDE;
+    display:block;
+    width:100%;
+    color:#FFF!important;
+    font-size: 14px;
+    font-family: 'fs_elliot_pro-regular', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding:10px 12px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.10);
+    cursor: pointer;
+	  line-height: 1.42857143;
+    border-radius: 4px;
+    touch-action: manipulation;
+    text-transform: uppercase;
+    letter-spacing: 2px
+
+}
+hr {
+  background:#B9B9B9;
+  color:#B9B9B9;
+  height: 1px;
+  border: none;
+}
+
+button:hover,
+button:focus {
+	background:#009CDE;
+	color:#FFF;
+}
+
+input[type=text],
+input[type=text]:focus,
+input[type=text]:active,
+input[type=password],
+input[type=password]:focus,
+input[type=password]:active
+{
+  
+  width: 288px;
+  height: 34px;
+  padding: 0 12px 2px;
+  line-height: 1.42857143;
+  color: #CCD4D8; /* 7F949D + 0.4 opacity */
+  /*color: #555;*/
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 18px;
+  border:none;
+  border-bottom: 1px solid #ccc;
+  box-shadow: none;
+  background-color: transparent!important;
+  font-family: 'fs_elliot_pro-light', Helvetica, Arial, sans-serif;
+  font-weight:bold;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border:none; 
+  -webkit-text-fill-color: none!important;
+  -webkit-box-shadow: none!important;
+  background-color: none!important;
+}
+
+.traditional-signin input[type=text],
+.traditional-signin input[type=text]:focus,
+.traditional-signin input[type=text]:active {
+    color: #7F949D;
+}
+
+/* overrides */
+#header-container img {
+  display:none;
+}
+#header-container  {
+  height:150px;
+  background: url('logo.png') no-repeat;
+  background-size: 100% auto;
+}
+
+#floating-container {
+   /*box-shadow: none*/
+}
+
+h1.screen-heading {
+  font-family: 'fs_elliot_pro-light', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 100%;
+  margin:0;
+}
+
+.social-signin {
+  margin-bottom: 25px
+}
+
+.social-signin p,
+#resetPasswordRequest p {
+  font-family: 'fs_elliot_pro-light', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #244958;
+}
+
+.social-login-buttons button,
+.traditional-signin button {
+  padding:10px 12px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.10);
+  margin-bottom:12px;
+  font-size: 14px;
+  letter-spacing: 2px
+}
+
+.traditional-signin p:nth-child(2),
+.traditional-signin p:nth-child(4),
+#resetPasswordRequest .auth-screen p:nth-child(3) {
+   padding-left: 10px!important;
+}
+
+/* remove other buttons */
+.social-login-buttons button:nth-child(3),
+.social-login-buttons button:nth-child(4),
+.social-login-buttons button:nth-child(5) {
+    display:none;
+}
+
+.traditional-signin h2 {
+  font-family: 'fs_elliot_pro-light', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color:#244958;
+}
+
+.traditional-signin p {
+    font-family: 'fs_elliot_pro-light', Helvetica, Arial, sans-serif;
+    color:#7F949D;
+    font-size: 14px
+}
+
+#signIn .form-action-buttons,
+#signIn .form-action-buttons button {
+   margin: 0;
+}
+
+#signIn input {
+   width:275px;
+}
+
+a.forgot-password-link {
+    display:block; 
+    position: static!important;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.footer-container {
+    border:none;
+    margin:0;
+    padding-top:10px;
+}
+
+.footer-container span,
+.footer-container a,
+.footer-container a:active,
+.footer-container a:hover,
+.footer-container a:focus,
+a.forgot-password-link,
+a.forgot-password-link:active,
+a.forgot-password-link:hover,
+a.forgot-password-link:focus {
+  text-decoration: none;
+  color:#244958;
+  font-family: 'fs_elliot_pro-regular', Helvetica, Arial, sans-serif;
+  font-size: 13px
+}
+
+.footer-container a.aic-control {
+  display:inline-block;
+  margin-left:5px;
+  font-family: 'fs_elliot_pro-bold', Helvetica, Arial, sans-serif;
+}
+.footer-container span,
+.footer-container a,
+.footer-container a:hover,
+.footer-container a:active {
+   font-size: 12px
+}
+
+#resetPasswordRequest h2 {
+  color:#244958;
+  font-family: 'fs_elliot_pro-light', Helvetica, Arial, sans-serif;
+  font-size: 13px
+}
+
+#resetPasswordRequest .form-action-buttons {
+   margin-top: 25px;
+}
+
+#resetPasswordRequest .form-action-buttons button {
+   letter-spacing: 2px;
+}
+
+#socialRegistration p {
+  font-family: 'fs_elliot_pro-light', Helvetica, Arial, sans-serif;
+  color:#7F949D;
+  font-size: 14px 
+}
+
+/* remove Field: Display Name, Phone number */
+#socialRegistration .auth-screen > p:nth-child(2),
+#socialRegistration .auth-screen > p:nth-child(3),
+#socialRegistration .auth-screen > p:nth-child(5),
+#socialRegistration .auth-screen > p:nth-child(6)
+ {
+   display:none;
+}
+
+/* Field > Email Address */
+#socialRegistration .auth-screen > p:nth-child(4),
+#socialRegistration .auth-screen > p:nth-child(8), 
+#socialRegistration .auth-screen > p:nth-child(10){
+  padding-left:10px;
+}
+
+
+
+/* term and privacy */
+#socialRegistration .auth-screen > p:nth-child(12) {
+  color:#244958;
+  font-family: 'fs_elliot_pro-light', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 105%
+}
+#socialRegistration .auth-screen u {
+  text-decoration: none!important;
+  font-family: 'fs_elliot_pro-bold', Helvetica, Arial, sans-serif;
+}
+
+#socialRegistration .screen-heading {
+  margin-bottom: 35px
+}
+
+
+
+/* END STYLESHEET HERE */
