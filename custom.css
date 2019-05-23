@@ -195,9 +195,9 @@ h1.screen-heading {
 }
 
 /* remove other buttons */
-.social-login-buttons button:nth-child(3),
 .social-login-buttons button:nth-child(4),
-.social-login-buttons button:nth-child(5) {
+.social-login-buttons button:nth-child(5),
+.social-login-buttons button:nth-child(6) {
     display:none;
 }
 
